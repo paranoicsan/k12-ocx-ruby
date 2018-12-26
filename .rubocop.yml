@@ -12,7 +12,7 @@ AllCops:
     - bin/*
     - db/schema.rb
     - node_modules/**/*
-  TargetRubyVersion: 2.3
+  TargetRubyVersion: 2.5
 
 Layout/MultilineMethodCallIndentation:
   EnforcedStyle: indented_relative_to_receiver

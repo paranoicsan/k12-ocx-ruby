@@ -6,3 +6,5 @@
 
 # Ignore IDE specific files
 /.idea
+
+/result.json

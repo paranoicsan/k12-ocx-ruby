@@ -1,4 +1,6 @@
-ruby'2.5.2'
+# frozen_string_literal: true
+
+ruby '2.5.2'
 
 source 'https://rubygems.org'
 
