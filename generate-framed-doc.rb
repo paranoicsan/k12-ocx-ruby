@@ -1,11 +1,7 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
-require 'rubygems'
-require 'bundler'
-Bundler.require
-
-require 'environment'
+require_relative 'environment'
 
 html = Nokogiri::HTML.parse File.read(SOURCE_DATA)
 json = html.xpath(%(*//script[@type="application/ld+json"])).map { |x| JSON.parse x }
