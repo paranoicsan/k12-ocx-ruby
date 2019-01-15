@@ -5,7 +5,7 @@ require_relative 'environment'
 
 SCRIPT_SELECTOR = 'script[@type="application/ld+json"]'
 STYLE_CDN = 'https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css'
-UPDATED_DATA = File.join File.expand_path('data', __dir__), 'json-ld-updated.html'
+UPDATED_DATA = File.join File.expand_path('../data', __dir__), 'json-ld-updated.html'
 
 raise 'Generate framed tree first. Execute "generate-framed-doc.rb" script' unless File.exist?(FRAMED_DOC)
 
