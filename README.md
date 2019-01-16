@@ -1,9 +1,14 @@
+```sh
+gem instal bundler
+bunlde install
+```
+
 ## Working with JSON-LD structured data
 
 Inside `json-ld` directory run the first script to generate framed document
 ```sh
 cd json-ld
-./generate-framed-doc.rb
+./build-frame.rb
 ```
 That will produce [framed document](json-ld/result.json?raw=true)
 
@@ -14,4 +19,18 @@ cd json-ld
 ```
 That will build new HTML [document](data/json-ld-updated.html?raw=true)
 
-![New document](data/images/img1.png?raw=true "New document")
+## Working with RDFa structured data
+
+Inside `rfda` directory run the first script to generate the graph to be used as reference
+```sh
+cd rdfa
+./build-graph.rb
+```
+That will produce [graph](rdfa/graph-rdfa.html?raw=true)
+
+Execute sample script to generate new document with brand new markup
+```sh
+cd rdfa
+./build-new-document.rb
+```
+That will build new HTML [document](data/rdfa-updated.html?raw=true)

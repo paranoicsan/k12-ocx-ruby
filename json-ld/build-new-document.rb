@@ -1,13 +1,13 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
-require_relative 'environment'
+require_relative 'environment-json-ld'
 
 SCRIPT_SELECTOR = 'script[@type="application/ld+json"]'
 STYLE_CDN = 'https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css'
 UPDATED_DATA = File.join File.expand_path('../data', __dir__), 'json-ld-updated.html'
 
-raise 'Generate framed tree first. Execute "generate-framed-doc.rb" script' unless File.exist?(FRAMED_DOC)
+raise 'Generate framed tree first. Execute "build-frame.rb" script' unless File.exist?(FRAMED_DOC)
 
 # Get the root entity and revert the order of the lessons
 framed_doc = JSON.parse File.read(FRAMED_DOC)
