@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
-require_relative 'environment'
+require_relative 'environment-json-ld'
 
 html = Nokogiri::HTML.parse File.read(SOURCE_DATA)
 json = html.xpath(%(*//script[@type="application/ld+json"])).map { |x| JSON.parse x }
