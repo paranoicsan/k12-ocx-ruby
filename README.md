@@ -1,5 +1,5 @@
 ```sh
-gem instal bundler
+gem install bundler
 bundle install
 ```
 
