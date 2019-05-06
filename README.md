@@ -1,6 +1,6 @@
 ```sh
 gem instal bundler
-bunlde install
+bundle install
 ```
 
 ## Working with JSON-LD structured data
