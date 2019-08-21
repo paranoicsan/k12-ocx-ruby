@@ -5,7 +5,7 @@ ruby '2.5.2'
 source 'https://rubygems.org'
 
 gem 'json-ld'
-gem 'nokogiri'
+gem 'nokogiri', '>= 1.10.4'
 gem 'nokogumbo' # for HTML5 support for RDFa
 gem 'pry'
 gem 'rdf-rdfa'
